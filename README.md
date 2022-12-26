@@ -4,7 +4,9 @@
 # Installation
 
 `git clone https://github.com/ParkerSm1th/junior-dev-challenge.git`
+
 `cd junior-dev-challenge`
+
 `npm install`
 
 # Starting up the app
@@ -13,5 +15,7 @@
 # Keybinds
 
 `⌘ + Z` - Undo
+
 `⌘ + Shift + Z` - Redo
+
 `⌘ + C` - Clear Canvas

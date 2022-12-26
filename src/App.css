@@ -17,7 +17,8 @@
   animation-fill-mode: both;
 }
 
-.ControlBar {
+.ControlBar,
+.SourceBar {
   z-index: 2;
   position: absolute;
   top: 0;
@@ -31,7 +32,17 @@
   align-items: center;
 }
 
-.ControlBar div {
+.SourceBar {
+  right: 30px;
+  bottom: 0;
+  left: unset;
+  top: unset;
+  border-radius: 5px 5px 0 0;
+  background: rgba(69, 159, 255, 0.5);
+}
+
+.ControlBar div,
+.SourceBar div {
   padding: 0 10px;
   margin: 0 5px;
   cursor: pointer;
@@ -40,7 +51,8 @@
   border-radius: 5px;
 }
 
-.ControlBar div:hover {
+.ControlBar div:hover,
+.SourceBar div:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 

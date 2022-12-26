@@ -64,6 +64,16 @@ function App() {
 
   return (
     <>
+      <div className="SourceBar">
+        <div
+          onClick={() =>
+            window.open("https://github.com/ParkerSm1th/junior-dev-challenge")
+          }
+        >
+          Source Code
+        </div>
+      </div>
+
       <div className="ControlBar">
         <div
           className={points.length > 0 ? "" : "disabled"}

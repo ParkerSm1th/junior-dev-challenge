@@ -101,20 +101,23 @@ function App() {
           <div className="CTATextWrapper">
             <div className="CTAText">
               <h1>Click anywhere to add a point</h1>
-              <h2>Use the controls below to undo, redo, or clear</h2>
+              <h2>
+                a project made by{" "}
+                <a href="https://parkersmith.io">Parker Smith</a>
+              </h2>
               <div className="CTAKeys">
                 {[
                   {
                     keys: ["⌘", "Z"],
-                    description: "Undo",
+                    description: "Undo point",
                   },
                   {
                     keys: ["⌘", "⇧", "Z"],
-                    description: "Redo",
+                    description: "Redo point",
                   },
                   {
                     keys: ["⌘", "C"],
-                    description: "Clear",
+                    description: "Clear point",
                   },
                 ].map((key, index) => (
                   <div key={index} className="Key">

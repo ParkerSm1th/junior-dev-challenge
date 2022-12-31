@@ -117,7 +117,7 @@ function App() {
                   },
                   {
                     keys: ["⌘", "C"],
-                    description: "Clear point",
+                    description: "Clear canvas",
                   },
                 ].map((key, index) => (
                   <div key={index} className="Key">

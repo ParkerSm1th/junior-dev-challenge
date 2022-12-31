@@ -97,6 +97,41 @@ function App() {
         </div>
       </div>
       <div className="App" onClick={handleClick}>
+        {points.length == 0 && (
+          <div className="CTATextWrapper">
+            <div className="CTAText">
+              <h1>Click anywhere to add a point</h1>
+              <h2>Use the controls below to undo, redo, or clear</h2>
+              <div className="CTAKeys">
+                {[
+                  {
+                    keys: ["⌘", "Z"],
+                    description: "Undo",
+                  },
+                  {
+                    keys: ["⌘", "⇧", "Z"],
+                    description: "Redo",
+                  },
+                  {
+                    keys: ["⌘", "C"],
+                    description: "Clear",
+                  },
+                ].map((key, index) => (
+                  <div key={index} className="Key">
+                    <div className="KeyDesc">{key.description}</div>
+                    <div className="Keys">
+                      {key.keys.map((key, index) => (
+                        <div key={index} className="KeyItem">
+                          {key}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
         {points.map((point, index) => (
           <div
             key={index}
